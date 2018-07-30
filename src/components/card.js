@@ -9,7 +9,9 @@ class Card extends Component {
 
         this.state = {
             color: '',
-            pluralNoun: ''
+            pluralNoun: '',
+            adjectiveOne: '',
+            celebOne: ''
         }
 
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -26,6 +28,8 @@ class Card extends Component {
                 <h1>{this.state.color}</h1>
                 { Input('Color', this.state.color, this.handleInputChange, 'color')}
                 { Input('Plural Noun', this.state.pluralNoun, this.handleInputChange, 'pluralNoun') }
+                { Input('Adjective', this.state.adjective, this.handleInputChange, 'adjectiveOne')}
+                { Input('Celebrity', this.state.celebOne, this.handleInputChange, 'celebOne') }
             </div>
         )
     }
