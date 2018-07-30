@@ -4,7 +4,6 @@ import Input from './input';
 
 class Card extends Component {
 
-<<<<<<< HEAD
    constructor() {
        super()
 
@@ -34,7 +33,7 @@ class Card extends Component {
            </div>
        )
    }
-=======
+
     constructor() {
         super()
 
@@ -67,14 +66,13 @@ class Card extends Component {
            {
                inputData.map(data => Input(data.title, data.state, this.handleInputChange, data name))
            }
-               /* { Input('Color', this.state.color, this.handleInputChange, 'color')}
+                {/* Input('Color', this.state.color, this.handleInputChange, 'color')}
                 { Input('Plural Noun', this.state.pluralNoun, this.handleInputChange, 'pluralNoun') }
                 { Input('Adjective', this.state.adjective, this.handleInputChange, 'adjectiveOne')}
-                { Input('Celebrity', this.state.celebOne, this.handleInputChange, 'celebOne') } */
+                { Input('Celebrity', this.state.celebOne, this.handleInputChange, 'celebOne') */} 
             </div>
         )
     }
->>>>>>> e84d636eaab4b2a5853edf40b4c702f69301c47a
 }
 
 export default Card;
